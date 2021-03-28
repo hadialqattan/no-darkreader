@@ -51,8 +51,8 @@ Setup your HTML file, then it should work properly!
 
 Pull requests are welcome! For larger changes, especially structural ones, please open an issue first to discuss what you would like to change.
 
-If you have a feature request, feel free to [open an issue](https://github.com/hadialqattan/nodarkreader/issues)!
+If you have a feature request, feel free to [open an issue](https://github.com/hadialqattan/no-darkreader/issues)!
 
 ## License
 
-This project is licensed under a [MIT](./LICENSE.md) license.
+This project is licensed under a [MIT](./LICENSE) license.
