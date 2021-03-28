@@ -23,7 +23,7 @@
 
 ## Installation
 
-You can copy the latest minified version from https://raw.githubusercontent.com/hadialqattan/no-darkreader/master/nodarkreader.min.js.
+You can copy the latest minified version from [here](https://raw.githubusercontent.com/hadialqattan/no-darkreader/master/nodarkreader.min.js).
 
 You can also install the package via `npm`:
 
