@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/hadialqattan/no-darkreader/issues"
   },
-  "homepage": "https://github.com/hadialqattan/no-darkreader"
+  "homepage": "https://github.com/hadialqattan/no-darkreader",
+  "directories": {
+    "doc": "docs"
+  }
 }
