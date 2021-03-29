@@ -10,7 +10,7 @@
 <p align="center">
     <img alt="npm" src="https://img.shields.io/npm/v/no-darkreader"/>
     <img alt="GitHub" src="https://img.shields.io/github/license/hadialqattan/no-darkreader">
-    <!-- TODO: add deepscan -->
+    <a href="https://deepscan.io/dashboard#view=project&tid=13457&pid=16463&bid=353863"><img src="https://deepscan.io/api/teams/13457/projects/16463/branches/353863/badge/grade.svg" alt="DeepScan grade"></a>
     <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/hadialqattan/no-darkreader/nodarkreader.min.js?label=minified%20size">
 </p>
 
