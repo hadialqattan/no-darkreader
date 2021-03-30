@@ -64,9 +64,18 @@
   // Create an observer instance linked to the callback function.
   const observer = new MutationObserver(callback)
 
-  // Start observing the target node for configured mutations.
-  observer.observe(document.head, config)
+  if (!document.querySelector('meta[content="' + fakeMetaTag.content + '"]')) {
+    console.error(
+      'Please add the line bellow to your index.html:\n',
+      '<meta name="darkreader" content="DISABLE-DARKREADER-WORKAROUND">\n',
+      'or you may encounter performance issues!\n',
+      '\nplease take a look at: https://github.com/hadialqattan/no-darkreader#usage'
+    )
+  } else {
+    // Start observing the target node for configured mutations.
+    observer.observe(document.head, config)
 
-  // Execute for the fist time to take effect.
-  callback()
+    // Execute for the fist time to take effect.
+    callback()
+  }
 })()
