@@ -33,7 +33,7 @@ npm install no-darkreader
 
 ## Usage
 
-Setup your HTML file, then it should work properly!
+Setup your `index.html` file, then it should work properly:
 
 ```html
 ...
@@ -47,7 +47,21 @@ Setup your HTML file, then it should work properly!
 ...
 ```
 
+Or if it installed via `npm` you can add the line bellow in your `index.html`:
+
+```html
+<meta name="darkreader" content="DISABLE-DARKREADER-WORKAROUND" />
+```
+
+and the line bellow in your app entrypoint file (e.g. `index.js` or `App.js` ):
+
+```js
+import 'no-darkreader'
+```
+
 ## Contributing
+
+> note: please run `./minify.sh` before submitting any PR!
 
 Pull requests are welcome! For larger changes, especially structural ones, please open an issue first to discuss what you would like to change.
 

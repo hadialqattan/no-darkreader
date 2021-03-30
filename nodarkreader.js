@@ -22,38 +22,14 @@
   SOFTWARE.
 */
 
-/**
- * Runs the initialization and exports the public functions.
- * Only "Public" members will be exported.
- * Initialization is done trough a factory method to allow different module supports.
- */
-;(function (root, factory) {
-  if (typeof define === 'function' && define.amd) {
-    // Define exports for Asynchronous Module Definition (AMD)
-    define('nodarkreader', [], factory)
-  } else if (typeof exports === 'object') {
-    // Define exports for CommonJS (CJS)
-    module.exports = factory()
-  } else {
-    // Fallback to defining as browser global under 'nodarkreader'.
-    root.nodarkreader = factory()
-  }
-})(this, function () {
-  // Remove all Darkreader style tags form `document.head` (Private)
-  const removeDarkreader = function () {
-    // NOTE: use traditional 'for loops' for IE 11
-    for (const style of document.head.getElementsByClassName('darkreader')) {
-      style.remove()
-    }
-  }
-
-  // Fake html meta tag to disable darkreader (Private)
+;(function () {
+  // Fake html meta tag to disable darkreader.
   const fakeMetaTag = document.createElement('meta')
   fakeMetaTag.name = 'darkreader'
   fakeMetaTag.content = 'DISABLE-DARKREADER-WORKAROUND'
 
-  // Check for darkreader meta tag, add if not exists (Private)
-  const addMetaTag = function () {
+  // Alter the real metatag with the fake one.
+  const alterMetaTag = function () {
     let correctTag = document.querySelector(
       'meta[content="' + fakeMetaTag.content + '"]'
     )
@@ -68,47 +44,29 @@
     }
   }
 
-  // TODO: uncomment when we've `stop` function
-  // Remove the fake metatag (Private)
-  /* const removeMetaTag = function () {
-    let fakeTag = document.querySelector(
-      'meta[content="' + fakeMetaTag.content + '"]'
-    )
-    if (fakeTag) {
-      fakeTag.remove()
+  // Remove all Darkreader style tags form `document.head`.
+  const removeDarkreader = function () {
+    // NOTE: use traditional 'for loops' for IE 11
+    for (const style of document.head.getElementsByClassName('darkreader')) {
+      style.remove()
     }
-  } */
+  }
 
-  // Init function (Private)
-  const init = function () {
-    addMetaTag()
+  // Observing callback function.
+  const callback = function () {
+    alterMetaTag()
     removeDarkreader()
   }
 
-  // Options for the observer (which mutations to observe) (Private)
+  // Options for the observer (which mutations to observe).
   const config = { attributes: false, childList: true, subtree: false }
 
-  // Create an observer instance linked to the callback function (Private)
-  const observer = new MutationObserver((mutationsList, observer) => init())
+  // Create an observer instance linked to the callback function.
+  const observer = new MutationObserver(callback)
 
-  // Start observing the target node for configured mutations
+  // Start observing the target node for configured mutations.
   observer.observe(document.head, config)
 
-  // TODO: move the line above inside this function when we've functional `stop` function
-  //const start = function () {}
-
-  // TODO: find way to stop blocking Darkreader!
-  // Stop observing the target node (Public)
-  /* const stop = function () {
-    observer.disconnect()
-    removeMetaTag()
-  }*/
-
-  // TODO: remove when we've start & stop functions
-  init()
-
-  return {
-    // related to above todo: start,
-    // related to above todo: stop,
-  }
-})
+  // Execute for the fist time to take effect.
+  callback()
+})()
