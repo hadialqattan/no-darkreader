@@ -64,7 +64,10 @@
   // Create an observer instance linked to the callback function.
   const observer = new MutationObserver(callback)
 
-  if (!document.querySelector('meta[content="' + fakeMetaTag.content + '"]')) {
+  if (
+    !document.querySelector('meta[content="' + fakeMetaTag.content + '"]') &&
+    document.querySelector('meta[name="' + fakeMetaTag.name + '"]')
+  ) {
     console.error(
       'Please add the line bellow to your index.html:\n',
       '<meta name="darkreader" content="DISABLE-DARKREADER-WORKAROUND">\n',
