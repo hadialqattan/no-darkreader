@@ -4,7 +4,7 @@
 </h1>
 
 <h4 align="center">
-    A workaround to block the Darkreader extension from working on your already dark website!
+    A plugin to block the Darkreader extension from working on your already dark website!
 </h4>
 
 <p align="center">
@@ -39,7 +39,7 @@ Setup your `index.html` file, then it should work properly:
 ...
 <head>
   ...
-  <meta name="darkreader" content="DISABLE-DARKREADER-WORKAROUND" />
+  <meta name="darkreader" content="NO-DARKREADER-PLUGIN" />
   ...
 </head>
 ...
@@ -50,7 +50,7 @@ Setup your `index.html` file, then it should work properly:
 Or if it installed via `npm` you can add the line bellow in your `index.html`:
 
 ```html
-<meta name="darkreader" content="DISABLE-DARKREADER-WORKAROUND" />
+<meta name="darkreader" content="NO-DARKREADER-PLUGIN" />
 ```
 
 and the line bellow in your app entrypoint file (e.g. `index.js` or `App.js` ):
