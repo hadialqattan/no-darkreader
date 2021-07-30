@@ -1,31 +1,31 @@
 {
-  "name": "no-darkreader",
-  "version": "1.0.0",
-  "description": "A plugin to block the Darkreader extension from working on your already dark website!",
-  "main": "nodarkreader.min.js",
-  "files": [
-    "nodarkreader.min.js"
-  ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hadialqattan/no-darkreader.git"
-  },
-  "keywords": [
-    "darkreader",
-    "no-darkreader",
-    "block-darkreader",
-    "anti-darkreader"
-  ],
-  "author": "Hadi Alqattan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hadialqattan/no-darkreader/issues"
-  },
-  "homepage": "https://github.com/hadialqattan/no-darkreader",
-  "directories": {
-    "doc": "docs"
-  }
+	"name": "no-darkreader",
+	"version": "1.0.1",
+	"description": "A plugin to block the Darkreader extension from working on your already dark website!",
+	"main": "nodarkreader.min.js",
+	"files": [
+		"nodarkreader.min.js"
+	],
+	"scripts": {
+		"test": "echo \"Error: no test specified\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hadialqattan/no-darkreader.git"
+	},
+	"keywords": [
+		"darkreader",
+		"no-darkreader",
+		"block-darkreader",
+		"anti-darkreader"
+	],
+	"author": "Hadi Alqattan",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/hadialqattan/no-darkreader/issues"
+	},
+	"homepage": "https://github.com/hadialqattan/no-darkreader",
+	"directories": {
+		"doc": "docs"
+	}
 }
