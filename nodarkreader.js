@@ -1,7 +1,7 @@
 /*
   MIT License
 
-  Copyright (c) 2021 Hadi Alqattan
+  Copyright (c) 2021 Hadi Alqattan <alqattanhadizaki@gmail.com>
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
@@ -44,7 +44,7 @@
     }
   };
 
-  // Remove all Darkreader style tags form `document.head`.
+  // Remove all DarkReader style tags form `document.head`.
   const removeDarkreader = function () {
     // NOTE: use traditional 'for loops' for IE 11
     for (const style of document.head.getElementsByClassName("darkreader")) {
@@ -71,7 +71,7 @@
     console.error(
       "Please add the line bellow to your index.html:\n",
       '<meta name="darkreader" content="NO-DARKREADER-PLUGIN">\n',
-      "or you may encounter performance issues!\n",
+      "or you may encounter a performance issue!\n",
       "\nplease take a look at: https://github.com/hadialqattan/no-darkreader#usage"
     );
   } else {
