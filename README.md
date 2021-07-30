@@ -1,5 +1,5 @@
 <h1 align="center" style="position: relative;">
-    <img width="200" src="./docs/nodarkreader.png"/><br>
+    <img width="200" src="./logo.png"/><br>
     NoDarkreader
 </h1>
 
@@ -69,7 +69,7 @@ If you have a feature request, feel free to [open an issue](https://github.com/h
 ## FAQ
 
 ### How does it work?
-Starting from [DarkReader/src/inject/dynamic-theme/index.ts](https://github.com/darkreader/darkreader/blob/a08d923f43aaf8b96293491fe0c649c9e0c1edc2/src/inject/dynamic-theme/index.ts) file: 
+Starting from [DarkReader/src/inject/dynamic-theme/index.ts](https://github.com/darkreader/darkreader/blob/a08d923f43aaf8b96293491fe0c649c9e0c1edc2/src/inject/dynamic-theme/index.ts) file:
 ```ts
 function isAnotherDarkReaderInstanceActive() {
     const meta: HTMLMetaElement = document.querySelector('meta[name="darkreader"]');
@@ -89,7 +89,7 @@ function isAnotherDarkReaderInstanceActive() {
 You may encounter this infinite-loop which causes a performance issue:
 
 1- `DarkReader` injects a metatag with its instance ID (`DarkReader` may work before `no-darkreader` plugin):
-```ts 
+```ts
 // SOURCE: https://github.com/darkreader/darkreader/blob/a08d923f43aaf8b96293491fe0c649c9e0c1edc2/src/inject/dynamic-theme/index.ts
 function createDarkReaderInstanceMarker() {
     const metaElement: HTMLMetaElement = document.createElement('meta');
@@ -119,4 +119,4 @@ function isAnotherDarkReaderInstanceActive() {
 
 ## License
 
-This project is licensed under a [MIT](./LICENSE) license.
+This project is licensed under an [MIT](./LICENSE) license.
