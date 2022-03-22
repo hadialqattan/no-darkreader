@@ -116,6 +116,8 @@ function isAnotherDarkReaderInstanceActive() {
 
 4- **goto step 2**.
 
+## Credits
+Thanks to Kainoa Kanter ([@ThatOneCalculator](https://github.com/ThatOneCalculator)) for the awesome logo.
 
 ## License
 
