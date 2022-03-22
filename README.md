@@ -1,5 +1,5 @@
 <h1 align="center" style="position: relative;">
-    <img width="200" src="./logo.png"/><br>
+    <img width="200" src="./logo.svg"/><br>
     NoDarkreader
 </h1>
 
