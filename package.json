@@ -1,6 +1,6 @@
 {
 	"name": "no-darkreader",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A plugin to block the Darkreader extension from working on your already dark website!",
 	"main": "nodarkreader.min.js",
 	"files": [
