@@ -44,7 +44,7 @@
     }
   };
 
-  // Remove all DarkReader style tags form `document.head`.
+  // Remove all DarkReader style tags from `document.head`.
   const removeDarkreader = function () {
     // NOTE: use traditional 'for loops' for IE 11
     for (const style of document.head.getElementsByClassName("darkreader")) {
