@@ -44,7 +44,7 @@
     }
   };
 
-  // Remove all DarkReader style tags form `document.head`.
+  // Remove all DarkReader style tags from `document.head`.
   const removeDarkreader = function () {
     // NOTE: use traditional 'for loops' for IE 11
     for (const style of document.head.getElementsByClassName("darkreader")) {
@@ -69,7 +69,7 @@
     document.querySelector('meta[name="' + fakeMetaTag.name + '"]')
   ) {
     console.error(
-      "Please add the line bellow to your index.html:\n",
+      "Please add the line below to your index.html:\n",
       '<meta name="darkreader" content="NO-DARKREADER-PLUGIN">\n',
       "or you may encounter a performance issue!\n",
       "\nplease take a look at: https://github.com/hadialqattan/no-darkreader#usage"
