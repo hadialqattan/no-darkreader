@@ -1,3 +1,7 @@
+> **THIS PLUGIN HAS BEEN DEPRECATED SINCE THE EXISTANCE OF [`<meta name="darkreader-lock">`](https://github.com/darkreader/darkreader/pull/9181) META-TAG WHICH ACHIEVES THE SAME PURPOSE OF THIS PLUGIN!**
+
+> **_THIS REPO HAS BEEN ARCHIVED._**
+
 <h1 align="center">
     <img width=200 src="./logo.svg"/><br>
     NoDarkreader
