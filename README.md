@@ -1,4 +1,4 @@
-> **THIS PLUGIN HAS BEEN DEPRECATED SINCE THE EXISTANCE OF [`<meta name="darkreader-lock">`](https://github.com/darkreader/darkreader/pull/9181) META-TAG WHICH ACHIEVES THE SAME PURPOSE OF THIS PLUGIN!**
+> **THIS PLUGIN HAS BEEN DEPRECATED SINCE THE EXISTANCE OF [`<meta name="darkreader-lock">`](https://github.com/darkreader/darkreader/pull/9181) META-TAG WHICH SERVES THE SAME PURPOSE OF THIS PLUGIN!**
 
 > **_THIS REPO HAS BEEN ARCHIVED._**
 
